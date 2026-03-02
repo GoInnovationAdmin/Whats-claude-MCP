@@ -17,7 +17,7 @@ WhatsApp ←→ TextMeBot API ←→ WhatsMCP (FastAPI webhook + Claude Code SDK
 
 - Python 3.11+ (or Docker)
 - Claude Code CLI (`npm install -g @anthropic-ai/claude-code`)
-- TextMeBot account with API key
+- TextMeBot **paid** account with API key ([textmebot.com](https://textmebot.com))
 - VPS with public IP (to receive TextMeBot webhook)
 
 ## Docker Setup (recommended)
