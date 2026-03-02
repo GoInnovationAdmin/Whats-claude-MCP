@@ -1,0 +1,16 @@
+services:
+  whatsmcp:
+    build: .
+    container_name: whatsmcp
+    restart: unless-stopped
+    ports:
+      - "${WEBHOOK_PORT:-8090}:8090"
+    env_file:
+      - .env
+    volumes:
+      - ./projects:/app/projects
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8090/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
