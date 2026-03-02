@@ -89,6 +89,13 @@ whatsmcp
 | `VERBOSE_LEVEL` | No | `1` | 0=quiet, 1=cost, 2=tools |
 | `DEBUG` | No | `false` | Verbose logging |
 
+## WhatsApp vs Telegram
+
+Unlike Telegram bots, this bot **can initiate conversations** — you don't need to message it first. It can proactively send messages to any valid WhatsApp number. Requirements:
+
+- The recipient must have an **active WhatsApp account**
+- A **paid TextMeBot subscription** is required for sending and receiving messages
+
 ## Security
 
 - Only numbers in `ALLOWED_NUMBERS` can interact with the bot
